@@ -6,9 +6,9 @@
 
 <body>
   <div class="container match">
-    <nav class="navbar">
+    <nav class="navba">
       <ul class="match">
-        <%if logged_in? %>
+        <% if logged_in? %>
         <li style="color:white" class="h3">Welcome, <%= current_user.username %></li>
         <div class="btn-group h1" role="group" aria-label="...">
           
@@ -24,7 +24,7 @@
           </li>
         </div>
         
-      <%else %>
+      <% else %>
         
         <div class="btn-group h1" role="group" aria-label="...">
           <li class="text-center">
@@ -39,7 +39,7 @@
           </li>
           
         </div>
-        <%end %>
+        <% end %>
       </ul>
     </nav>
     <div class="container">
